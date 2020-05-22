@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="29.941436">
+    <testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario" time="12.344214">
+        <failure message="junit.framework.ComparisonFailure: expected:&lt;C[RMPRO]&gt; but was:&lt;C[ogmento CRM]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at stepDefinitions.LoginStepDefinition.user_is_on_hopme_page(LoginStepDefinition.java:57)&#13;&#10;&#9;at ✽.Then user is on home page(src/main/java/Features/login.feature:21)&#13;&#10;">
+            <![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Free CRM........................................passed
+Then user enters "naveenk" and "test@123"...................................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................failed
+Then Close the browser......................................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<C[RMPRO]> but was:<C[ogmento CRM]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinitions.LoginStepDefinition.user_is_on_hopme_page(LoginStepDefinition.java:57)
+	at ✽.Then user is on home page(src/main/java/Features/login.feature:21)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario 2" time="17.597222">
+        <failure message="junit.framework.ComparisonFailure: expected:&lt;C[RMPRO]&gt; but was:&lt;C[ogmento CRM]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at stepDefinitions.LoginStepDefinition.user_is_on_hopme_page(LoginStepDefinition.java:57)&#13;&#10;&#9;at ✽.Then user is on home page(src/main/java/Features/login.feature:21)&#13;&#10;">
+            <![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Free CRM........................................passed
+Then user enters "tom" and "test456"........................................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................failed
+Then Close the browser......................................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<C[RMPRO]> but was:<C[ogmento CRM]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinitions.LoginStepDefinition.user_is_on_hopme_page(LoginStepDefinition.java:57)
+	at ✽.Then user is on home page(src/main/java/Features/login.feature:21)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
